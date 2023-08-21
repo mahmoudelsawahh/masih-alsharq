@@ -30,7 +30,7 @@ const SecondaryBanner = () => {
             </Grid>
             <Grid item xs={12} md={5} sx={{marginBottom : {xs : '15px' , md : 0}}} >
              <Box sx={{width : 'auto', minHeight : '250px'}}>
-             <Image priority={true} src={personalImage} alt='ماسيه الشرق لاستقدام و الحاق العمالة بالخارج' style={{width : '100%', height : '100%'}}/>
+             {/* <Image priority={true} src={personalImage} alt='ماسيه الشرق لاستقدام و الحاق العمالة بالخارج' style={{width : '100%', height : '100%'}}/> */}
              </Box>
             </Grid>
             <Grid item></Grid>
