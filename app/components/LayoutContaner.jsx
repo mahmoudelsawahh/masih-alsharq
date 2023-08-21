@@ -3,12 +3,12 @@ import { createCache , CacheProvider, ThemeProvider , CssBaseline, createTheme  
 import { Cairo } from 'next/font/google';
 import rtlPlugin from 'stylis-plugin-rtl';
 import ProviderLayout from '@/ProviderLayout';
-import DrawerAppBar from './NavBar';
-import dynamic from 'next/dynamic';
+// import DrawerAppBar from './NavBar';
+// import dynamic from 'next/dynamic';
 
-const Footer = dynamic(() => import('./Footer/Footer'),{
-  ssr : false
-});
+// const Footer = dynamic(() => import('./Footer/Footer'),{
+//   ssr : false
+// });
 
 const cache = createCache({
   key: 'css',
@@ -67,9 +67,9 @@ export default function LayoutContainer({ children }) {
       <CssBaseline/>
            <>        
               <ProviderLayout>
-                    <DrawerAppBar/>
+                    {/* <DrawerAppBar/> */}
                    {children}
-                   <Footer/>
+                   {/* <Footer/> */}
             </ProviderLayout>
            </>
       </ThemeProvider>
