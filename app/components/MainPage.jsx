@@ -3,6 +3,10 @@ import dynamic from 'next/dynamic';
 import LazyLoad from 'react-lazyload';
 import Testimonial from './Testimonial/Testimonial';
 import Product_container from './Product/Product_container';
+const Footer = dynamic(() => import('./Footer/Footer'),{
+  ssr : false
+});
+
 const ServiceCard = dynamic(() => import('./ServiceCard/ServiceCard'),{
   ssr : false
 });
@@ -42,6 +46,7 @@ export default function MainPage(){
         <HomeFooter/> 
         <Loaction/>
         </main>
+        <Footer/>
     </>
   )
 }
