@@ -6,6 +6,9 @@ import ProviderLayout from '@/ProviderLayout';
 import dynamic from 'next/dynamic';
 import DrawerAppBar from './NavBar';
 
+const Footer = dynamic(() => import('./Footer/Footer'),{
+  ssr : false
+});
 const cache = createCache({
   key: 'css',
   prepend: true,
@@ -66,6 +69,7 @@ export default function LayoutContainer({ children }) {
                     <DrawerAppBar/>
                    {children}
             </ProviderLayout>
+              <Footer/>
            </>
       </ThemeProvider>
     </CacheProvider>
