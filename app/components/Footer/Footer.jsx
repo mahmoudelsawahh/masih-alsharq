@@ -10,7 +10,8 @@ import DownloadForOfflineIcon from '@mui/icons-material/DownloadForOffline';
 const Footer = () => {
   return (
      <footer>
-         <Box sx={{backgroundColor : '#fff'}}>
+      <LazyLoad height={"100%"} once>
+      <Box sx={{backgroundColor : '#fff'}}>
         <Container maxWidth="xl" sx={{padding: '50px 0px'}}>
             <Grid container columnGap={5} alignItems={'center'}>
               <Grid item xs={12} md={2} textAlign={'center'}>
@@ -73,7 +74,8 @@ const Footer = () => {
             <Link href={'https://deltawy.com'} style={{color : '#fff', fontWeight : 500}}>All rights reserved to Deltawy@</Link>
             </Container>
         </Box>
-    </Box>
+         </Box>
+      </LazyLoad>
      </footer>
   )
 }
