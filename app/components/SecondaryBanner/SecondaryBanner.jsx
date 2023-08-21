@@ -11,8 +11,7 @@ const SecondaryBanner = () => {
     <>
       <Box sx={{backgroundColor : '#f1f8fc', minHeight :'100vh', position : 'relative', display : 'flex' , alignItems : 'center'}}>
          <Container maxWidth="xl">
-        <LazyLoad height={"100%"} once>
-        <Grid container sx={{paddingTop : '100px', flexDirection : {xs : 'column-reverse', md : 'row'}}} justifyContent={'center'} alignItems={'center'}>
+           <Grid container sx={{paddingTop : '100px', flexDirection : {xs : 'column-reverse', md : 'row'}}} justifyContent={'center'} alignItems={'center'}>
            <Grid item xs={12} md={6}>
                 <LazyLoad height={'100%'} once>
                 <Typography variant='h1' sx={{fontSize : '40px', width : '90%', color : '#312f3a', fontWeight : 'bold'}}>
@@ -36,7 +35,6 @@ const SecondaryBanner = () => {
             </Grid>
             <Grid item></Grid>
            </Grid>
-        </LazyLoad>
          </Container>
       </Box>
     </>
