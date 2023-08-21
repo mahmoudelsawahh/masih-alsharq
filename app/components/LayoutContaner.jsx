@@ -67,7 +67,7 @@ export default function LayoutContainer({ children }) {
       <CssBaseline/>
            <>        
               <ProviderLayout>
-                    {/* <DrawerAppBar/> */}
+                    <DrawerAppBar/>
                    {children}
                    <Footer/>
             </ProviderLayout>
