@@ -4,12 +4,8 @@ import { Cairo } from 'next/font/google';
 import rtlPlugin from 'stylis-plugin-rtl';
 import ProviderLayout from '@/ProviderLayout';
 import dynamic from 'next/dynamic';
-const DrawerAppBar = dynamic(() => import('./NavBar'),{
-  ssr : false
-});
-const Footer = dynamic(() => import('./Footer/Footer'),{
-  ssr : false
-});
+import DrawerAppBar from './NavBar';
+
 const cache = createCache({
   key: 'css',
   prepend: true,
@@ -70,7 +66,6 @@ export default function LayoutContainer({ children }) {
                     <DrawerAppBar/>
                    {children}
             </ProviderLayout>
-              <Footer/>
            </>
       </ThemeProvider>
     </CacheProvider>
