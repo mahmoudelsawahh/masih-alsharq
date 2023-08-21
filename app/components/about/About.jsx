@@ -1,3 +1,4 @@
+"use client"
 import { Box, Container, Grid, Typography } from "@/app/lib/MuiSsr"
 import Image from "next/image"
 import aboutUs from "/public/WM_003_tcm43-140383.png"

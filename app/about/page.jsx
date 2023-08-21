@@ -3,9 +3,6 @@ import mainImage from '/public/about-us.png'
 import secondaryImage from '/public/about-2.png'
 import { Box, Container, Grid, Typography } from '@mui/material';
 import Image from 'next/image';
-const Footer = dynamic(() => import('@/app/components/Footer/Footer'),{
-    ssr : false
-  });
 const About = dynamic(() => import('../components/about/About'),{
     ssr : false,
 });
