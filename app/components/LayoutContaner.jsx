@@ -3,8 +3,10 @@ import { createCache , CacheProvider, ThemeProvider , CssBaseline, createTheme  
 import { Cairo } from 'next/font/google';
 import rtlPlugin from 'stylis-plugin-rtl';
 import ProviderLayout from '@/ProviderLayout';
-import DrawerAppBar from './NavBar';
-
+import dynamic from 'next/dynamic';
+const DrawerAppBar = dynamic(() => import('./NavBar'),{
+  ssr : false
+});
 const cache = createCache({
   key: 'css',
   prepend: true,
