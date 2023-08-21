@@ -29,7 +29,7 @@ const SecondaryBanner = () => {
                 </LazyLoad>
             </Grid>
             <Grid item xs={12} md={5} sx={{marginBottom : {xs : '15px' , md : 0}}} >
-             <Box>
+             <Box sx={{width : 'auto', minHeight : '230px'}}>
              <Image loading='eager' src={personalImage} alt='ماسيه الشرق لاستقدام و الحاق العمالة بالخارج' style={{width : '100%', height : '100%'}}/>
              </Box>
             </Grid>
