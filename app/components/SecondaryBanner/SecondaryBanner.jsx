@@ -8,7 +8,7 @@ import LazyLoad from 'react-lazyload'
 
 const SecondaryBanner = () => {
   return (
-    <LazyLoad height={"100%"} once>
+    <>
       <Box sx={{backgroundColor : '#f1f8fc', minHeight :'100vh', position : 'relative', display : 'flex' , alignItems : 'center'}}>
          <Container maxWidth="xl">
            <Grid container sx={{paddingTop : '100px', flexDirection : {xs : 'column-reverse', md : 'row'}}} justifyContent={'center'} alignItems={'center'}>
@@ -30,14 +30,14 @@ const SecondaryBanner = () => {
             </Grid>
             <Grid item xs={12} md={5} sx={{marginBottom : {xs : '15px' , md : 0}}} >
              <Box sx={{width : 'auto', minHeight : '250px'}}>
-             <Image priority={true} src={personalImage} layout='responsive' alt='ماسيه الشرق لاستقدام و الحاق العمالة بالخارج' style={{width : '100%', height : '100%'}}/>
+             {/* <Image priority={true} src={personalImage} alt='ماسيه الشرق لاستقدام و الحاق العمالة بالخارج' style={{width : '100%', height : '100%'}}/> */}
              </Box>
             </Grid>
             <Grid item></Grid>
            </Grid>
          </Container>
       </Box>
-    </LazyLoad>
+    </>
   )
 }
 
