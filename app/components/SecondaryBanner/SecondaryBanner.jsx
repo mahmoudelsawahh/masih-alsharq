@@ -4,6 +4,7 @@ import playStoreImage from '/public/play-store-btn.svg'
 import appStoreImage from '/public/app-store-btn.svg'
 import { Box, Container, Grid, Typography } from "@/app/lib/MuiSsr"
 import Image from "next/image"
+import LazyLoad from 'react-lazyload'
 
 const SecondaryBanner = () => {
   return (
@@ -26,7 +27,9 @@ const SecondaryBanner = () => {
               </Box>
             </Grid>
             <Grid item xs={12} md={5} sx={{marginBottom : {xs : '15px' , md : 0}}}>
-              {/* <Image priority={true} src={personalImage} alt='ماسيه الشرق لاستقدام و الحاق العمالة بالخارج' layout='responsive'/> */}
+             <LazyLoad height={'100%'} once>
+             <Image priority={true} src={personalImage} alt='ماسيه الشرق لاستقدام و الحاق العمالة بالخارج' layout='responsive'/>
+             </LazyLoad>
             </Grid>
             <Grid item></Grid>
            </Grid>
