@@ -13,6 +13,7 @@ const SecondaryBanner = () => {
          <Container maxWidth="xl">
            <Grid container sx={{paddingTop : '100px', flexDirection : {xs : 'column-reverse', md : 'row'}}} justifyContent={'center'} alignItems={'center'}>
            <Grid item xs={12} md={6}>
+                <LazyLoad height={'100%'} once>
                 <Typography variant='h1' sx={{fontSize : '40px', width : '90%', color : '#312f3a', fontWeight : 'bold'}}>
                 ماسيه الشرق لاستقدام و الحاق العمالة بالخارج
                 </Typography>
@@ -25,9 +26,12 @@ const SecondaryBanner = () => {
                   <Image loading="lazy" src={playStoreImage} alt="ماسيه الشرق لاستقدام و الحاق العمالة بالخارج" style={{margin : '0px 20px', cursor : 'pointer'}}/>
                   <Image loading="lazy" src={appStoreImage} alt="ماسيه الشرق لاستقدام و الحاق العمالة بالخارج" style={{margin : '0px', cursor : 'pointer',}}/>
               </Box>
+                </LazyLoad>
             </Grid>
             <Grid item xs={12} md={5} sx={{marginBottom : {xs : '15px' , md : 0}}} >
-             <Image loading='lazy' src={personalImage} alt='ماسيه الشرق لاستقدام و الحاق العمالة بالخارج' style={{width : '100%', height : '100%'}}/>
+             <Box>
+             <Image priority={true} src={personalImage} alt='ماسيه الشرق لاستقدام و الحاق العمالة بالخارج' style={{width : '100%', height : '100%'}}/>
+             </Box>
             </Grid>
             <Grid item></Grid>
            </Grid>
