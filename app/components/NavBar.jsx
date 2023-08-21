@@ -146,8 +146,7 @@ export default function DrawerAppBar(props) {
             <Button variant='contained' color='secondary' onClick={()=> handelLogin()}>
               {!isLogin ? "تسجيل الدخول":"تسجيل الخروج"}
             </Button>
-              <LazyLoad height={"100%"} once>
-              <Box>
+             <Box>
              <Link aria-label='facebook' href={'https://www.facebook.com/m.alshrq.recruitment'}>
                 <FacebookIcon fontSize='medium' sx={{color : '#333'}}/>
              </Link>
@@ -164,7 +163,6 @@ export default function DrawerAppBar(props) {
                 <TwitterIcon fontSize='medium' sx={{color : '#333'}}/>
              </Link>
              </Box>
-              </LazyLoad>
             </Grid>
           </Grid>
        </Toolbar>
