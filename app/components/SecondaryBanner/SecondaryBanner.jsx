@@ -27,7 +27,9 @@ const SecondaryBanner = () => {
               </Box>
             </Grid>
             <Grid item xs={12} md={5} sx={{marginBottom : {xs : '15px' , md : 0}}} >
-             <Image priority={true} src={personalImage} alt='ماسيه الشرق لاستقدام و الحاق العمالة بالخارج' layout='responsive'/>
+              <Box sx={{position : 'relative', width : '500px', height : '500px'}}>
+              <Image loading='lazy' src={personalImage} alt='ماسيه الشرق لاستقدام و الحاق العمالة بالخارج' layout='fill'/>
+              </Box>
             </Grid>
             <Grid item></Grid>
            </Grid>
