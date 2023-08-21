@@ -118,7 +118,7 @@ export default function DrawerAppBar(props) {
  );
  const container = window !== undefined ? () => window().document.body : undefined;
  return ( 
-        <LazyLoad height={"100%"} once>
+        <>
      <CssBaseline />
      <AppBar sx={{position: 'fixed'}}>
        <Container maxWidth="xl">
@@ -186,7 +186,7 @@ export default function DrawerAppBar(props) {
          {drawer}
        </Drawer>     
    </Box>
-        </LazyLoad>
+        </>
      
  );
 }
