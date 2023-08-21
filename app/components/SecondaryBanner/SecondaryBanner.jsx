@@ -26,10 +26,8 @@ const SecondaryBanner = () => {
                   <Image loading="lazy" src={appStoreImage} alt="ماسيه الشرق لاستقدام و الحاق العمالة بالخارج" style={{margin : '0px', cursor : 'pointer',}}/>
               </Box>
             </Grid>
-            <Grid item xs={12} md={5} sx={{marginBottom : {xs : '15px' , md : 0}}}>
-             <LazyLoad height={'100%'} once>
+            <Grid item xs={12} md={5} sx={{marginBottom : {xs : '15px' , md : 0}, display : {xs : 'none', md : "block"}}} >
              <Image priority={true} src={personalImage} alt='ماسيه الشرق لاستقدام و الحاق العمالة بالخارج' layout='responsive'/>
-             </LazyLoad>
             </Grid>
             <Grid item></Grid>
            </Grid>
